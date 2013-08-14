@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#4f271c">
+    <Button
+        android:id="@+id/switchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SWITCH STRING"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:id="@+id/storyText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="nothing"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
+<!-- From: file:/Users/spawrks/Desktop/UDETEST/ContactList2/DeltaMadLibsProject/DeltaMadLibs/src/main/res/layout/activity_main.xml -->
