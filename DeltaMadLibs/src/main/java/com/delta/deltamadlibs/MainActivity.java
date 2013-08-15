@@ -2,10 +2,14 @@ package com.delta.deltamadlibs;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -16,6 +20,7 @@ public class MainActivity extends Activity {
     String myMadLib;
     int flipFlopper;
     //Add a List as a member variable here
+    List<String> mSillyWordsList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,15 @@ public class MainActivity extends Activity {
 
 
         // Setup the list here, and reference it in the myMadLib string.
+        mSillyWordsList = new ArrayList<String>();
+
+        mSillyWordsList.add("Frazzlewazzit");
+        mSillyWordsList.add("dingleberry");
+        mSillyWordsList.add("foozle");
+        mSillyWordsList.add("frankendouche");
+        mSillyWordsList.add("gigglewart");
+        mSillyWordsList.add("Washingclone");
+        mSillyWordsList.add("jigglewatt");
 
 
 
@@ -57,9 +71,12 @@ public class MainActivity extends Activity {
 
                 if (flipFlopper == 0)
                 {
-
                     //This is where you should loop through your list and create a string to describe the values.
-                    String s = "a list should go here";
+                    String s = ""; //a list should go here";
+
+                    for( String item : mSillyWordsList ) {
+                        s = s + item + "\n";
+                    }
                     mTextView.setText(s);
                     flipFlopper = 1;
                 }else{
